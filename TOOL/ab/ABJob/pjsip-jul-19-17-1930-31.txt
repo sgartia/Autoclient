@@ -1,0 +1,18 @@
+ 19:30:31.695          pjlib  select() I/O Queue created (0000000000385C40)
+ 19:30:31.695 sip_endpoint.c  Module "mod-msg-print" registered
+ 19:30:31.695 udp00000000003  SIP UDP transport started, published address is 172.30.26.141:5060
+ 19:30:31.695 sip_endpoint.c  Module "mod-tsx-layer" registered
+ 19:30:31.695 sip_endpoint.c  Module "mod-stateful-util" registered
+ 19:30:31.695 sip_endpoint.c  Module "mod-ua" registered
+ 19:30:31.695 sip_endpoint.c  Module "mod-invite" registered
+ 19:30:31.695 sip_endpoint.c  Module "mod-100rel" registered
+ 19:30:31.695 sip_endpoint.c  Module "mod-simpleua" registered
+ 19:30:31.775     wmme_dev.c  WMME found 5 devices:
+ 19:30:31.775     wmme_dev.c   dev_id 0: Wave mapper  (in=2, out=2)
+ 19:30:31.775     wmme_dev.c   dev_id 1: Microphone (Logitech USB Headse  (in=2, out=0)
+ 19:30:31.775     wmme_dev.c   dev_id 2: Microphone (Realtek High Defini  (in=2, out=0)
+ 19:30:31.775     wmme_dev.c   dev_id 3: Speakers (Logitech USB Headset   (in=0, out=2)
+ 19:30:31.775     wmme_dev.c   dev_id 4: Speaker/HP (Realtek High Defini  (in=0, out=2)
+ 19:30:31.775     wmme_dev.c  WMME initialized
+ 19:30:31.775          pjlib  select() I/O Queue created (00000000003B0288)
+ 19:30:31.776     simpleua.c  Successfully created REGISTER message

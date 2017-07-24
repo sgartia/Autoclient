@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+
+    <timestamp key="bySecond" datePattern="yyyyMMdd-HHmmss" />
+
+    <appender name="STDOUT" class="ch.qos.logback.core.ConsoleAppender">
+        <encoder>
+            <pattern>
+                %d{yyyy-MM-dd HH:mm:ss.SSS}:%level:%class{0}: %msg%n
+            </pattern>
+        </encoder>
+    </appender>
+
+<!--	<appender name="FILE" class="ch.qos.logback.core.FileAppender"> -->
+	    <!-- deny all events with a level below INFO, that is TRACE and DEBUG -->
+<!--	    <filter class="ch.qos.logback.classic.filter.ThresholdFilter">
+	      <level>WARN</level>
+	    </filter>
+		<append>true</append>
+		<file>logs/AB-${ip}_${bySecond}.log</file>
+		<encoder>
+			<pattern>%d{yyyy-MM-dd HH:mm:ss.SSS}:[%thread] %level:%class{0}: %msg%n</pattern>
+		</encoder>
+	</appender>
+-->
+<!--     <logger name="ab" level="INFO" additivity="false"><appender-ref ref="STDOUT" /></logger> -->
+<!--     <logger name="vocera" level="INFO"></logger> -->
+<!--     <logger name="server" level="INFO"></logger>             -->
+
+<!--  VALID LEVELS: ALL, TRACE, DEBUG, INFO, WARN, ERROR, OFF-->
+    <root level="INFO">
+        <appender-ref ref="STDOUT" />
+        <!-- NOTE: this appender has a threshold filter defined, no logging below WARN will occur -->
+<!--        <appender-ref ref="FILE" />  -->
+    </root>
+</configuration>

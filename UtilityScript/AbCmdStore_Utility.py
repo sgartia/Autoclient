@@ -129,6 +129,7 @@ class ABCmdSet(object):
     CalleeName = None
     CalleeNameAppearInVSLog = None    
     WaitTime = None
+    WaitTimeAfterCall = None
     
         
     # initiate the constructor 
@@ -138,13 +139,18 @@ class ABCmdSet(object):
     def __Restore(self):		
 	self.PromptName = None
 	self.SignalName = None
-	self.WaitTime = 10
+	self.WaitTime = 120
 	
     
 	
     # -        ###  Set of possible action   #####
     @property
     def WaitUntill(self):
-        self.CmdList = [ 'UNTIL',] 
+        #self.CmdList = [ 'UNTIL  Prompt MainMenu_prompt_completed   wait   '+str(self.WaitTime)+'']
+	self.CmdList = [ 'UNTIL']
         return self.CmdList
     
+    @property
+    def CallAndWait(self):
+        self.CmdList = [ 'UNTIL  Prompt MainMenu_prompt_completed   wait   '+str(self.WaitTimeAfterCall)+'','CALL   wait   3','UNTIL  Prompt MainMenu_prompt_completed   wait  2']
+        return self.CmdList

@@ -1,0 +1,5 @@
+SenderVCSLoginID,SenderMacID,SenderVoiceID,RecipientVCSLoginID,RecipientMacID,RecipientVoiceID,VMPRecipentID,CallDuration
+PK1,ddd000110001,u-p1,PK5,ddd000110005,u-p5,330,30
+PK2,ddd000110002,u-p2,PK6,ddd000110006,u-p6,331,30
+PK3,ddd000110003,u-p3,PK7,ddd000110007,u-p7,332,30
+PK4,ddd000110004,u-p4,PK8,ddd000110008,u-p8,333,30

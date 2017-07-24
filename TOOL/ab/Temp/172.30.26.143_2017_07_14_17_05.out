@@ -1,0 +1,290 @@
+07/14/17 17:05:03.977 AB ================ AB START ========================
+07/14/17 17:05:03.979 AB Args: -ipServer 172.30.29.1 -ip 172.30.26.143 -cmd C:\Autoclient\TOOL\ab\Temp\172.30.26.143_TempAb.ab -out C:\Autoclient\TOOL\ab\Temp\172.30.26.143_2017_07_14_17_05.out -dir C:\Autoclient\TOOL\AB5\ -log 5 -wavdir C:\Autoclient\TOOL\ab\WavFiles -apMac ff11111111ff -mac 0009ef001002 -rtp 
+07/14/17 17:05:03.979 AB 
+07/14/17 17:05:03.980 AB java.vm.name Java HotSpot(TM) 64-Bit Server VM
+07/14/17 17:05:03.980 AB java.runtime.version 1.8.0_121-b13
+07/14/17 17:05:03.980 AB AB4 -- Automated Badge Version 4 (Build 9400)
+07/14/17 17:05:03.980 AB Apr 21 2013  added -phoneLogDir for vomo-SIP logs.
+07/14/17 17:05:03.980 AB Mar 29 2013  abUserAgent.dll nowe loads ok.
+07/14/17 17:05:03.981 AB Jan 21 2013  DLL crash fixed.  Log files (non-AB) re-directed.  Speaker can be turned off.
+07/14/17 17:05:03.982 AB Temporary files directory: C:\Users\sgartia\AppData\Local\Temp\ab_temp\103981\
+07/14/17 17:05:03.985 AB sName resources/0.wav
+07/14/17 17:05:03.989 AB sName resources/1.wav
+07/14/17 17:05:03.996 AB sName resources/2.wav
+07/14/17 17:05:04.000 AB sName resources/3.wav
+07/14/17 17:05:04.005 AB sName resources/4.wav
+07/14/17 17:05:04.010 AB sName resources/5.wav
+07/14/17 17:05:04.017 AB sName resources/6.wav
+07/14/17 17:05:04.022 AB sName resources/7.wav
+07/14/17 17:05:04.028 AB sName resources/8.wav
+07/14/17 17:05:04.033 AB sName resources/9.wav
+07/14/17 17:05:04.038 AB sName resources/Accept.wav
+07/14/17 17:05:04.043 AB sName resources/AddressBook.wav
+07/14/17 17:05:04.048 AB sName resources/AnotherNumber.wav
+07/14/17 17:05:04.054 AB sName resources/Call.wav
+07/14/17 17:05:04.059 AB sName resources/DepartmentOne.wav
+07/14/17 17:05:04.064 AB sName resources/Deskphone.wav
+07/14/17 17:05:04.069 AB sName resources/Everyone.wav
+07/14/17 17:05:04.075 AB sName resources/From.wav
+07/14/17 17:05:04.079 AB sName resources/HomePhone.wav
+07/14/17 17:05:04.084 AB sName resources/LogOut.wav
+07/14/17 17:05:04.089 AB sName resources/Only.wav
+07/14/17 17:05:04.094 AB sName resources/OutsideBuddy.wav
+07/14/17 17:05:04.098 AB sName resources/Stop_Forwarding.wav
+07/14/17 17:05:04.103 AB sName resources/To.wav
+07/14/17 17:05:04.108 AB sName resources/Transfer.wav
+07/14/17 17:05:04.113 AB sName resources/WhatGroupsAmIIn.wav
+07/14/17 17:05:04.118 AB sName resources/WhatTimeIsIt.wav
+07/14/17 17:05:04.123 AB sName resources/WhoAmI.wav
+07/14/17 17:05:04.129 AB sName resources/a-2.wav
+07/14/17 17:05:04.134 AB sName resources/a.wav
+07/14/17 17:05:04.136 AB sName resources/accept_all_calls.wav
+07/14/17 17:05:04.141 AB sName resources/add.wav
+07/14/17 17:05:04.146 AB sName resources/address_book.wav
+07/14/17 17:05:04.151 AB sName resources/all.wav
+07/14/17 17:05:04.156 AB sName resources/an-2.wav
+07/14/17 17:05:04.161 AB sName resources/an.wav
+07/14/17 17:05:04.166 AB sName resources/announce.wav
+07/14/17 17:05:04.170 AB sName resources/another.wav
+07/14/17 17:05:04.175 AB sName resources/another_number.wav
+07/14/17 17:05:04.180 AB sName resources/b.wav
+07/14/17 17:05:04.184 AB sName resources/back.wav
+07/14/17 17:05:04.189 AB sName resources/block.wav
+07/14/17 17:05:04.194 AB sName resources/block_all_calls.wav
+07/14/17 17:05:04.199 AB sName resources/block_all_calls_except.wav
+07/14/17 17:05:04.204 AB sName resources/broadcast.wav
+07/14/17 17:05:04.208 AB sName resources/buddies.wav
+07/14/17 17:05:04.213 AB sName resources/c.wav
+07/14/17 17:05:04.218 AB sName resources/calls.wav
+07/14/17 17:05:04.223 AB sName resources/cancel.wav
+07/14/17 17:05:04.227 AB sName resources/cell.wav
+07/14/17 17:05:04.232 AB sName resources/cell_phone.wav
+07/14/17 17:05:04.237 AB sName resources/cellphone.wav
+07/14/17 17:05:04.242 AB sName resources/command.wav
+07/14/17 17:05:04.247 AB sName resources/conference.wav
+07/14/17 17:05:04.256 AB sName resources/connect_to.wav
+07/14/17 17:05:04.261 AB sName resources/d.wav
+07/14/17 17:05:04.267 AB sName resources/delete.wav
+07/14/17 17:05:04.272 AB sName resources/department_one.wav
+07/14/17 17:05:04.277 AB sName resources/desk.wav
+07/14/17 17:05:04.282 AB sName resources/desk_phone.wav
+07/14/17 17:05:04.286 AB sName resources/dial.wav
+07/14/17 17:05:04.291 AB sName resources/double.wav
+07/14/17 17:05:04.296 AB sName resources/e.wav
+07/14/17 17:05:04.300 AB sName resources/erase.wav
+07/14/17 17:05:04.305 AB sName resources/except.wav
+07/14/17 17:05:04.310 AB sName resources/extension.wav
+07/14/17 17:05:04.314 AB sName resources/f.wav
+07/14/17 17:05:04.319 AB sName resources/forward.wav
+07/14/17 17:05:04.323 AB sName resources/forward_ALL_option.wav
+07/14/17 17:05:04.328 AB sName resources/forward_OFFLINE_Option.wav
+07/14/17 17:05:04.333 AB sName resources/forward_my_calls_to.wav
+07/14/17 17:05:04.338 AB sName resources/forwarding.wav
+07/14/17 17:05:04.342 AB sName resources/from-2.wav
+07/14/17 17:05:04.347 AB sName resources/g.wav
+07/14/17 17:05:04.352 AB sName resources/greeting.wav
+07/14/17 17:05:04.357 AB sName resources/group-2.wav
+07/14/17 17:05:04.362 AB sName resources/group.wav
+07/14/17 17:05:04.367 AB sName resources/h.wav
+07/14/17 17:05:04.372 AB sName resources/home.wav
+07/14/17 17:05:04.377 AB sName resources/home_phone.wav
+07/14/17 17:05:04.382 AB sName resources/i.wav
+07/14/17 17:05:04.386 AB sName resources/j.wav
+07/14/17 17:05:04.391 AB sName resources/join_the_conference_for.wav
+07/14/17 17:05:04.397 AB sName resources/k.wav
+07/14/17 17:05:04.401 AB sName resources/l.wav
+07/14/17 17:05:04.406 AB sName resources/learn.wav
+07/14/17 17:05:04.411 AB sName resources/leave_the_conference_for.wav
+07/14/17 17:05:04.417 AB sName resources/log_out.wav
+07/14/17 17:05:04.423 AB sName resources/m.wav
+07/14/17 17:05:04.428 AB sName resources/me.wav
+07/14/17 17:05:04.432 AB sName resources/messages.wav
+07/14/17 17:05:04.437 AB sName resources/my.wav
+07/14/17 17:05:04.442 AB sName resources/n.wav
+07/14/17 17:05:04.446 AB sName resources/name.wav
+07/14/17 17:05:04.451 AB sName resources/naught.wav
+07/14/17 17:05:04.455 AB sName resources/no.wav
+07/14/17 17:05:04.460 AB sName resources/number.wav
+07/14/17 17:05:04.464 AB sName resources/o.wav
+07/14/17 17:05:04.469 AB sName resources/off.wav
+07/14/17 17:05:04.474 AB sName resources/oh.wav
+07/14/17 17:05:04.478 AB sName resources/old.wav
+07/14/17 17:05:04.483 AB sName resources/on.wav
+07/14/17 17:05:04.488 AB sName resources/outside.wav
+07/14/17 17:05:04.493 AB sName resources/outside_buddy.wav
+07/14/17 17:05:04.498 AB sName resources/p.wav
+07/14/17 17:05:04.502 AB sName resources/page.wav
+07/14/17 17:05:04.507 AB sName resources/phone.wav
+07/14/17 17:05:04.512 AB sName resources/play.wav
+07/14/17 17:05:04.517 AB sName resources/play_welcome_tutorial.wav
+07/14/17 17:05:04.522 AB sName resources/pound.wav
+07/14/17 17:05:04.527 AB sName resources/q.wav
+07/14/17 17:05:04.532 AB sName resources/r.wav
+07/14/17 17:05:04.537 AB sName resources/record.wav
+07/14/17 17:05:04.542 AB sName resources/redial.wav
+07/14/17 17:05:04.547 AB sName resources/remove.wav
+07/14/17 17:05:04.552 AB sName resources/repeat.wav
+07/14/17 17:05:04.557 AB sName resources/s.wav
+07/14/17 17:05:04.561 AB sName resources/save.wav
+07/14/17 17:05:04.567 AB sName resources/send_a_message_to.wav
+07/14/17 17:05:04.571 AB sName resources/speaker.wav
+07/14/17 17:05:04.577 AB sName resources/star.wav
+07/14/17 17:05:04.581 AB sName resources/stop.wav
+07/14/17 17:05:04.586 AB sName resources/t.wav
+07/14/17 17:05:04.590 AB sName resources/text.wav
+07/14/17 17:05:04.595 AB sName resources/through.wav
+07/14/17 17:05:04.602 AB sName resources/time.wav
+07/14/17 17:05:04.606 AB sName resources/to-2.wav
+07/14/17 17:05:04.610 AB sName resources/treble.wav
+07/14/17 17:05:04.615 AB sName resources/triple.wav
+07/14/17 17:05:04.620 AB sName resources/turn.wav
+07/14/17 17:05:04.624 AB sName resources/u.wav
+07/14/17 17:05:04.628 AB sName resources/unlearn.wav
+07/14/17 17:05:04.633 AB sName resources/urgent.wav
+07/14/17 17:05:04.638 AB sName resources/urgently.wav
+07/14/17 17:05:04.642 AB sName resources/v.wav
+07/14/17 17:05:04.647 AB sName resources/voicemail.wav
+07/14/17 17:05:04.652 AB sName resources/w.wav
+07/14/17 17:05:04.657 AB sName resources/what_conference_am_i_in.wav
+07/14/17 17:05:04.661 AB sName resources/what_groups_am_i_in.wav
+07/14/17 17:05:04.666 AB sName resources/what_time_is_it.wav
+07/14/17 17:05:04.670 AB sName resources/what_time_is_it_2.wav
+07/14/17 17:05:04.676 AB sName resources/who_am_i.wav
+07/14/17 17:05:04.682 AB sName resources/who_is_blocked.wav
+07/14/17 17:05:04.688 AB sName resources/who_is_in_my_conference.wav
+07/14/17 17:05:04.694 AB sName resources/who_is_in_the_conference_for.wav
+07/14/17 17:05:04.700 AB sName resources/x.wav
+07/14/17 17:05:04.706 AB sName resources/y.wav
+07/14/17 17:05:04.712 AB sName resources/yes.wav
+07/14/17 17:05:04.718 AB sName resources/z.wav
+07/14/17 17:05:04.726 AB   0                             1                             2                             3                             
+07/14/17 17:05:04.727 AB   4                             5                             6                             7                             
+07/14/17 17:05:04.727 AB   8                             9                             a                             a-2                           
+07/14/17 17:05:04.728 AB   accept                        accept_all_calls              add                           address_book                  
+07/14/17 17:05:04.728 AB   addressbook                   all                           an                            an-2                          
+07/14/17 17:05:04.729 AB   announce                      another                       another_number                anothernumber                 
+07/14/17 17:05:04.730 AB   b                             back                          block                         block_all_calls               
+07/14/17 17:05:04.730 AB   block_all_calls_except        broadcast                     buddies                       c                             
+07/14/17 17:05:04.731 AB   call                          calls                         cancel                        cell                          
+07/14/17 17:05:04.731 AB   cell_phone                    cellphone                     command                       conference                    
+07/14/17 17:05:04.732 AB   connect_to                    d                             delete                        department_one                
+07/14/17 17:05:04.733 AB   departmentone                 desk                          desk_phone                    deskphone                     
+07/14/17 17:05:04.734 AB   dial                          double                        e                             erase                         
+07/14/17 17:05:04.734 AB   everyone                      except                        extension                     f                             
+07/14/17 17:05:04.735 AB   forward                       forward_all_option            forward_my_calls_to           forward_offline_option        
+07/14/17 17:05:04.736 AB   forwarding                    from                          from-2                        g                             
+07/14/17 17:05:04.737 AB   greeting                      group                         group-2                       h                             
+07/14/17 17:05:04.737 AB   home                          home_phone                    homephone                     i                             
+07/14/17 17:05:04.738 AB   j                             join_the_conference_for       k                             l                             
+07/14/17 17:05:04.739 AB   learn                         leave_the_conference_for      log_out                       logout                        
+07/14/17 17:05:04.739 AB   m                             me                            messages                      my                            
+07/14/17 17:05:04.740 AB   n                             name                          naught                        no                            
+07/14/17 17:05:04.741 AB   number                        o                             off                           oh                            
+07/14/17 17:05:04.741 AB   old                           on                            only                          outside                       
+07/14/17 17:05:04.742 AB   outside_buddy                 outsidebuddy                  p                             page                          
+07/14/17 17:05:04.742 AB   phone                         play                          play_welcome_tutorial         pound                         
+07/14/17 17:05:04.743 AB   q                             r                             record                        redial                        
+07/14/17 17:05:04.743 AB   remove                        repeat                        s                             save                          
+07/14/17 17:05:04.744 AB   send_a_message_to             speaker                       star                          stop                          
+07/14/17 17:05:04.744 AB   stop_forwarding               t                             text                          through                       
+07/14/17 17:05:04.745 AB   time                          to                            to-2                          transfer                      
+07/14/17 17:05:04.745 AB   treble                        triple                        turn                          u                             
+07/14/17 17:05:04.746 AB   unlearn                       urgent                        urgently                      v                             
+07/14/17 17:05:04.746 AB   voicemail                     w                             what_conference_am_i_in       what_groups_am_i_in           
+07/14/17 17:05:04.747 AB   what_time_is_it               what_time_is_it_2             whatgroupsamiin               whattimeisit                  
+07/14/17 17:05:04.747 AB   who_am_i                      who_is_blocked                who_is_in_my_conference       who_is_in_the_conference_for  
+07/14/17 17:05:04.748 AB   whoami                        x                             y                             yes                           
+07/14/17 17:05:04.750 AB   z                             
+07/14/17 17:05:04.752 AB Loading DLL lib/abuseragent.dll
+07/14/17 17:05:04.865 AB Loading DLL lib/abvomo.dll
+07/14/17 17:05:04.982 AB Loading DLL lib/audioserver-rtp.dll
+07/14/17 17:05:05.118 AB Loading DLL lib/audioserver-rtp32.dll
+07/14/17 17:05:05.251 AB Loading DLL lib/audioserver-rtp64.dll
+07/14/17 17:05:05.372 AB Loading DLL lib/audioserver-vrtp.dll
+07/14/17 17:05:05.496 AB Loading DLL lib/audioserver-vrtp32.dll
+07/14/17 17:05:05.626 AB #     1: UNTIL  prompt dummy_foo1   wait 40
+07/14/17 17:05:05.794 AB Starting badge with MAC 0009ef001002 and IP '172.30.26.143'.
+07/14/17 17:05:05.811 AB [172.30.26.143] Current Server is 172.30.29.1
+07/14/17 17:05:05.812 AB [172.30.26.143] Badge state: First Ping
+07/14/17 17:05:05.816 AB [172.30.26.143] TX: ae ae ae ae 00 03 04 01 90 00 00 00 00 01 00 09 ef 00 10 02 00 02 00 00 00 00 00 ff 11 11 11 11 ff 00 00 00 00 00 05 05 05 05 05 05 05 05 05 05 05 05 05 05 05 05 05 05 05 05 7f 05 33 f9 00 00 00 00 
+07/14/17 17:05:05.821 AB [172.30.26.143] TX [1] Ping
+07/14/17 17:05:05.822 AB [172.30.26.143] RX: ae ae ae ae 00 02 00 00 04 00 00 00 00 01 00 09 ef 00 10 02 59 68 49 f9 00 00 03 3c 
+07/14/17 17:05:05.823 AB [172.30.26.143] RX: ae ae ae ae 00 0e 00 00 00 00 00 00 00 01 00 09 ef 00 10 02 00 bb 8c f3 
+07/14/17 17:05:05.824 AB [172.30.26.143] RX [1] Ack
+07/14/17 17:05:05.825 AB [172.30.26.143] Badge state: Standby
+07/14/17 17:05:05.828 AB [172.30.26.143] RX [1] Options iOptions 12291315
+07/14/17 17:05:05.830 AB [172.30.26.143] TX: ae ae ae ae 00 02 04 01 90 00 00 00 00 01 00 09 ef 00 10 02 
+07/14/17 17:05:05.834 AB [172.30.26.143] TX [1] Ack
+07/14/17 17:05:05.836 AB [172.30.26.143] RX: ae ae ae ae 00 0b 00 00 00 00 00 00 00 02 00 09 ef 00 10 02 04 04 04 04 04 04 04 04 04 04 04 04 04 04 04 04 04 04 04 04 
+07/14/17 17:05:05.838 AB [172.30.26.143] RX [2] MessageStatus
+07/14/17 17:05:05.839 AB [172.30.26.143] TX: ae ae ae ae 00 02 04 01 90 00 00 00 00 02 00 09 ef 00 10 02 
+07/14/17 17:05:05.839 AB [172.30.26.143] TX [2] Ack
+07/14/17 17:05:05.840 AB [172.30.26.143] RX: ae ae ae ae 00 05 00 00 00 00 00 00 00 03 00 09 ef 00 10 02 00 04 75 2d 62 62 00 03 62 20 62 
+07/14/17 17:05:05.842 AB [172.30.26.143] RX [3] Name User Name u-bb, Full Name b b
+07/14/17 17:05:05.842 AB [172.30.26.143] TX: ae ae ae ae 00 02 04 01 90 00 00 00 00 03 00 09 ef 00 10 02 
+07/14/17 17:05:05.843 AB [172.30.26.143] TX [3] Ack
+07/14/17 17:05:05.844 AB [172.30.26.143] RX: ae ae ae ae 00 06 00 00 00 00 00 00 00 04 00 09 ef 00 10 02 00 0c 66 66 31 31 31 31 31 31 31 31 66 66 
+07/14/17 17:05:05.845 AB [172.30.26.143] RX [4] APName AP Name ff11111111ff
+07/14/17 17:05:05.845 AB [172.30.26.143] TX: ae ae ae ae 00 02 04 01 90 00 00 00 00 04 00 09 ef 00 10 02 
+07/14/17 17:05:05.846 AB [172.30.26.143] TX [4] Ack
+07/14/17 17:05:05.846 AB [172.30.26.143] RX: ae ae ae ae 00 10 00 00 00 00 00 00 00 05 00 09 ef 00 10 02 00 00 00 00 00 
+07/14/17 17:05:05.848 AB [172.30.26.143] RX [5] VMessages cUndelivered 0, bAlert false
+07/14/17 17:05:05.848 AB [172.30.26.143] TX: ae ae ae ae 00 02 04 01 90 00 00 00 00 05 00 09 ef 00 10 02 
+07/14/17 17:05:05.850 AB [172.30.26.143] TX [5] Ack
+07/14/17 17:05:07.828 AB [172.30.26.143] Starting Command Processing
+07/14/17 17:05:07.828 AB [172.30.26.143] * C:\Autoclient\TOOL\ab\Temp\172.30.26.143_TempAb.ab:1  UNTIL prompt dummy_foo1 wait 40 
+07/14/17 17:05:26.865 AB [172.30.26.143] RX: ae ae ae ae 00 0a 00 00 00 00 00 00 00 06 00 09 ef 00 10 02 00 03 61 20 32 00 0e 39 30 34 38 35 31 34 36 32 30 30 39 36 32 00 00 00 01 00 00 00 00 00 04 75 2d 61 32 
+07/14/17 17:05:26.866 AB [172.30.26.143] Excess bytes at end of signal - data: ae ae ae ae 00 0a 00 00 00 00 00 00 00 06 00 09 ef 00 10 02 00 03 61 20 32 00 0e 39 30 34 38 35 31 34 36 32 30 30 39 36 32 00 00 00 01 00 00 00 00 00 04 75 2d 61 32 
+
+07/14/17 17:05:26.867 AB [172.30.26.143] RX [6] Name  sCallerName a 2
+07/14/17 17:05:26.868 AB [172.30.26.143] TX: ae ae ae ae 00 02 04 01 90 00 00 00 00 06 00 09 ef 00 10 02 
+07/14/17 17:05:26.868 AB [172.30.26.143] TX [6] Ack
+07/14/17 17:05:26.961 AB [172.30.26.143] RX: ae ae ae ae 00 07 00 00 00 00 00 00 00 07 00 09 ef 00 10 02 00 01 00 01 00 01 ac 1e 1d 01 1e d8 00 01 01 
+07/14/17 17:05:26.962 AB Mode=1 VocoderType=1 cOthers=1 ipOthers[0]=172.30.29.1 iPortOthers[0]=7896 cPacketsPerChunk=1 ForceSpeaker=true
+07/14/17 17:05:26.963 AB [172.30.26.143] RX [7] StartAudio as Mode=1 VocoderType=1 cOthers=1 ipOthers[0]=172.30.29.1 iPortOthers[0]=7896 cPacketsPerChunk=1 ForceSpeaker=true
+07/14/17 17:05:26.963 AB [172.30.26.143] Badge state: Active
+07/14/17 17:05:26.963 AB [172.30.26.143] TX: ae ae ae ae 00 02 04 01 90 00 00 00 00 07 00 09 ef 00 10 02 
+07/14/17 17:05:26.963 AB [172.30.26.143] TX [7] Ack
+07/14/17 17:05:26.967 AB [172.30.26.143] RX: ae ae ae ae 00 14 00 00 00 00 00 00 00 08 00 09 ef 00 10 02 00 14 50 72 6f 6d 70 74 3a 20 52 69 6e 67 2d 54 6f 6e 65 2d 30 31 
+07/14/17 17:05:26.970 AB [172.30.26.143] RX [8] Hint: Prompt: Ring-Tone-01
+07/14/17 17:05:26.973 AB [172.30.26.143] TX: ae ae ae ae 00 02 04 01 90 00 00 00 00 08 00 09 ef 00 10 02 
+07/14/17 17:05:26.974 AB [172.30.26.143] TX [8] Ack
+07/14/17 17:05:26.974 AB [172.30.26.143] RX: ae ae ae ae 00 14 00 00 00 00 00 00 00 09 00 09 ef 00 10 02 00 0b 50 72 6f 6d 70 74 3a 20 61 20 32 
+07/14/17 17:05:26.976 AB [172.30.26.143] RX [9] Hint: Prompt: a 2
+07/14/17 17:05:26.977 AB [172.30.26.143] TX: ae ae ae ae 00 02 04 01 90 00 00 00 00 09 00 09 ef 00 10 02 
+07/14/17 17:05:26.978 AB [172.30.26.143] TX [9] Ack
+07/14/17 17:05:28.789 AB [172.30.26.143] RX: ae ae ae ae 00 14 00 00 00 00 00 00 00 0a 00 09 ef 00 10 02 00 07 59 65 73 4f 72 4e 6f 
+07/14/17 17:05:28.789 AB [172.30.26.143] RX [10] Hint: YesOrNo
+07/14/17 17:05:28.790 AB [172.30.26.143] TX: ae ae ae ae 00 02 04 01 90 00 00 00 00 0a 00 09 ef 00 10 02 
+07/14/17 17:05:28.790 AB [172.30.26.143] TX [10] Ack
+07/14/17 17:05:28.791 AB [172.30.26.143] RX: ae ae ae ae 00 14 00 00 00 00 00 00 00 0b 00 09 ef 00 10 02 00 13 50 72 6f 6d 70 74 3a 20 61 63 63 65 70 74 5f 63 61 6c 6c 
+07/14/17 17:05:28.791 AB [172.30.26.143] RX [11] Hint: Prompt: accept_call
+07/14/17 17:05:28.791 AB [172.30.26.143] TX: ae ae ae ae 00 02 04 01 90 00 00 00 00 0b 00 09 ef 00 10 02 
+07/14/17 17:05:28.792 AB [172.30.26.143] TX [11] Ack
+07/14/17 17:05:28.793 AB [172.30.26.143] RX: ae ae ae ae 00 14 00 00 00 00 00 00 00 0c 00 09 ef 00 10 02 00 24 50 72 6f 6d 70 74 3a 20 41 73 6b 54 6f 41 63 63 65 70 74 5f 70 72 6f 6d 70 74 5f 63 6f 6d 70 6c 65 74 65 64 
+07/14/17 17:05:28.794 AB [172.30.26.143] RX [12] Hint: Prompt: AskToAccept_prompt_completed
+07/14/17 17:05:28.794 AB [172.30.26.143] TX: ae ae ae ae 00 02 04 01 90 00 00 00 00 0c 00 09 ef 00 10 02 
+07/14/17 17:05:28.794 AB [172.30.26.143] TX [12] Ack
+07/14/17 17:05:29.670 AB [172.30.26.143] RX: ae ae ae ae 00 14 00 00 00 00 00 00 00 0d 00 09 ef 00 10 02 00 24 50 72 6f 6d 70 74 3a 20 41 73 6b 54 6f 41 63 63 65 70 74 5f 70 72 6f 6d 70 74 5f 63 6f 6d 70 6c 65 74 65 64 
+07/14/17 17:05:29.670 AB [172.30.26.143] RX [13] Hint: Prompt: AskToAccept_prompt_completed
+07/14/17 17:05:29.670 AB [172.30.26.143] TX: ae ae ae ae 00 02 04 01 90 00 00 00 00 0d 00 09 ef 00 10 02 
+07/14/17 17:05:29.671 AB [172.30.26.143] TX [13] Ack
+07/14/17 17:05:34.740 AB [172.30.26.143] RX: ae ae ae ae 00 14 00 00 00 00 00 00 00 0e 00 09 ef 00 10 02 00 0b 50 72 6f 6d 70 74 3a 20 62 79 65 
+07/14/17 17:05:34.741 AB [172.30.26.143] RX [14] Hint: Prompt: bye
+07/14/17 17:05:34.741 AB [172.30.26.143] TX: ae ae ae ae 00 02 04 01 90 00 00 00 00 0e 00 09 ef 00 10 02 
+07/14/17 17:05:34.742 AB [172.30.26.143] TX [14] Ack
+07/14/17 17:05:35.631 AB [172.30.26.143] RX: ae ae ae ae 00 09 00 00 00 00 00 00 00 0f 00 09 ef 00 10 02 
+07/14/17 17:05:35.632 AB [172.30.26.143] RX [15] EndCall
+07/14/17 17:05:35.633 AB [172.30.26.143] Badge state: Standby
+07/14/17 17:05:35.634 AB [172.30.26.143] TX: ae ae ae ae 00 02 04 01 90 00 00 00 00 0f 00 09 ef 00 10 02 
+07/14/17 17:05:35.635 AB [172.30.26.143] TX [15] Ack
+07/14/17 17:05:35.636 AB [172.30.26.143] RX: ae ae ae ae 00 14 00 00 00 00 00 00 00 10 00 09 ef 00 10 02 00 23 50 72 6f 6d 70 74 3a 20 50 6c 61 79 50 72 6f 6d 70 74 5f 70 72 6f 6d 70 74 5f 63 6f 6d 70 6c 65 74 65 64 
+07/14/17 17:05:35.637 AB [172.30.26.143] RX [16] Hint: Prompt: PlayPrompt_prompt_completed
+07/14/17 17:05:35.637 AB [172.30.26.143] TX: ae ae ae ae 00 02 04 01 90 00 00 00 00 10 00 09 ef 00 10 02 
+07/14/17 17:05:35.645 AB [172.30.26.143] TX [16] Ack
+07/14/17 17:05:35.822 AB [172.30.26.143] TX: ae ae ae ae 00 03 04 01 90 00 00 00 00 02 00 09 ef 00 10 02 00 03 00 bb 8c f3 00 ff 11 11 11 11 ff 00 00 04 75 2d 62 62 00 03 62 20 62 05 05 05 05 05 05 05 05 05 05 05 05 05 05 05 05 05 05 05 05 7f 05 33 f9 00 00 00 01 
+07/14/17 17:05:35.823 AB [172.30.26.143] TX [2] Ping
+07/14/17 17:05:35.824 AB [172.30.26.143] RX: ae ae ae ae 00 02 00 00 04 00 00 00 00 02 00 09 ef 00 10 02 00 00 00 00 00 00 00 00 
+07/14/17 17:05:35.825 AB [172.30.26.143] RX [2] Ack
+07/14/17 17:05:47.830 AB [172.30.26.143] Wait 0 seconds for next command.
+07/14/17 17:05:47.831 AB ================ AB STOP  ========================

@@ -1,0 +1,23 @@
+07/14/17 16:58:02.560 AB ================ AB START ========================
+07/14/17 16:58:02.577 AB Args: -ipServer 172.30.29.1 -ip 172.30.26.141 -cmd C:\Autoclient\TOOL\ab\Temp\172.30.26.141_TempAb.ab -out C:\Autoclient\TOOL\ab\Temp\172.30.26.141_2017_07_14_16_57.out -dir C:\Autoclient\TOOL\AB5\ -log 5 -wavdir C:\Autoclient\TOOL\ab\WavFiles -apMac ff11111111ff -mac 0009ef001001 -rtp 
+07/14/17 16:58:02.578 AB 
+07/14/17 16:58:02.579 AB java.vm.name Java HotSpot(TM) 64-Bit Server VM
+07/14/17 16:58:02.580 AB java.runtime.version 1.8.0_121-b13
+07/14/17 16:58:02.580 AB AB4 -- Automated Badge Version 4 (Build 9400)
+07/14/17 16:58:02.581 AB Apr 21 2013  added -phoneLogDir for vomo-SIP logs.
+07/14/17 16:58:02.581 AB Mar 29 2013  abUserAgent.dll nowe loads ok.
+07/14/17 16:58:02.581 AB Jan 21 2013  DLL crash fixed.  Log files (non-AB) re-directed.  Speaker can be turned off.
+07/14/17 16:58:02.585 AB Temporary files directory: C:\Users\sgartia\AppData\Local\Temp\ab_temp\682582\
+07/14/17 16:58:02.603 AB sName resources/0.wav
+07/14/17 16:58:02.610 AB sName resources/1.wav
+07/14/17 16:58:02.661 AB java.io.FileNotFoundException: C:\Users\sgartia\AppData\Local\Temp\ab_temp\682582\1.wav (The requested operation cannot be performed on a file with a user-mapped section open)java.lang.Error
+	at ab.Debug.getStackTrace(Debug.java:69)
+	at ab.Log.log(Log.java:106)
+	at ab.Debug.fail(Debug.java:44)
+	at ab.Debug.fail(Debug.java:31)
+	at ab.StoredWavFileMgr.init(StoredWavFileMgr.java:59)
+	at ab.Ab.<init>(Ab.java:84)
+	at ab.Ab.main(Ab.java:27)
+
+07/14/17 16:58:02.663 AB [Ljava.lang.StackTraceElement;@511d50c0
+07/14/17 16:58:02.664 AB ================ AB STOP  ========================

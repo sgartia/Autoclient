@@ -1,7 +1,26 @@
 """  This module would contains all the method related to VMP """
+from GlobalVariable_Utility import *
 
-
-from GlobalInterOps import *
+class VMPEnvForWebConsole(object):
+    
+    VmpEndpoint = None
+    headers = {}
+    
+    def __init__(self):
+        """ Assign the parameter"""
+        
+        self.VmpEndpoint = "http://"+VMP_IP    
+        headers = {
+                    'Referer': self.VmpEndpoint,
+                    'Accept-Language': 'en-US,en;q=0.8',
+                    'Origin': self.VmpEndpoint,
+                    'X-Requested-With': 'XMLHttpRequest',
+                    'Content-Type': 'application/x-www-form-urlencoded; charset=UTF-8',
+                    'Accept': 'application/json, text/javascript, */*; q=0.01',
+                    'Accept-Encoding': 'gzip',
+                    'User-Agent': 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/40.0.2214.93 Safari/537.36'
+            }
+VMPGlobalEnv = VMPEnvForWebConsole()
 
 class VMP(object):
     """  This class contains all the method related to VMP"""
@@ -29,9 +48,13 @@ class VMP(object):
     TimeZone = None
     SessionID = None    
     VmpSend = None
+    
+    LogAgent = None
 
     def __init__(self):
         """  this method would initialize the VMP parameter """
+        # Create log agent to log all action by the VMP_WebConsole_Utility
+        self.LogAgent = TestRunLog()
        
         self.Sid = 'MAIN'
         self.TimeZone = '-330'
@@ -60,8 +83,9 @@ class VMP(object):
                     verify=False)
         print "Status: %s" %self.VmpSend.status_code
         if (self.VmpSend.status_code == 200):
-            LoadRun.Log.info( "Autheticated to VMP webconsole successfully Username : "+str(self.SenderLogin))
-            print self.VmpSend.text            
+            print "Autheticated to VMP webconsole successfully Username : "+str(self.SenderLogin)
+            print self.VmpSend.text  
+            self.LogAgent.Log.info("Autheticated_VMP_Webconsole_Username : "+str(self.SenderLogin))
             
            
             self.SessionID = str(str(str(self.VmpSend.text).split(",")[0]).split(":")[1]).strip("\"")
@@ -69,7 +93,8 @@ class VMP(object):
             return True
         else:
             
-            LoadRun.Log.info( "It failed to login VMP Web Console for the user : "+str(self.SenderLogin))
+            print "It failed to login VMP Web Console for the user : "+str(self.SenderLogin)
+            self.LogAgent.Log.info("Failed_Autheticated_VMP_Webconsole_Username : "+str(self.SenderLogin))
             return False
       
     
@@ -87,10 +112,11 @@ class VMP(object):
       
         if (self.VmpSend.status_code == 200):
             print "Maintained  the Session ID "
+            self.LogAgent.Log.info("Maintained_SessionID _Webconsole_Username : "+str(self.SenderLogin))
             #print self.VmpSend.text           
             return True
         else:
-            LoadRun.Log.info( "failed to Maintained  the Session ID Status for the user : "+str(self.SenderLogin))
+            print "failed to Maintained  the Session ID Status for the user : "+str(self.SenderLogin)
             return False
       
     ############################################################################
@@ -130,14 +156,15 @@ class VMP(object):
             
             if (self.VmpSend.status_code == 200):
                 print " Successfully Open the compose message window: "
-                LoadRun.Log.info( " Successfully Open the compose message window by the user: "+str(self.SenderLogin))  
-                print self.VmpSend.text 
+                print " Successfully Open the compose message window by the user: "+str(self.SenderLogin)
+                #print self.VmpSend.text 
                 self.SrvID = str(str(str(self.VmpSend.text).split(",")[0]).split(":")[1]).strip("")
                 print self.SrvID
+                self.LogAgent.Log.info("OpenTheNewComposeMessage_Webconsole_Username : "+str(self.SenderLogin))
                 
             else:
                 print "failed to Open the compose message window: %s" %self.VmpSend.status_code
-                LoadRun.Log.info( " failed to Successfully Open the compose message window by the user: "+str(self.SenderLogin)) 
+                print " failed to Successfully Open the compose message window by the user: "+str(self.SenderLogin)
     
     
             self.TempUrl = VMPGlobalEnv.VmpEndpoint+'/Api.ashx?c=Messages.Compose&action=GetTemplates'
@@ -156,12 +183,12 @@ class VMP(object):
             print self.VmpSend.status_code 
             if (self.VmpSend.status_code == 200):
                 print " Successfully Get a template: "+str(self.SenderLogin)
-                LoadRun.Log.info( " Successfully Get the template by the user: "+str(self.SenderLogin))  
+                print " Successfully Get the template by the user: "+str(self.SenderLogin)  
                 print self.VmpSend.text
                 
             else:
                 print "failed to Get a template:: %s" %self.VmpSend.status_code
-                LoadRun.Log.info( " Failed to Get a template: for the user :"+str(self.SenderLogin)) 
+                print " Failed to Get a template: for the user :"+str(self.SenderLogin) 
                
             self.TempUrl = VMPGlobalEnv.VmpEndpoint+'/Api.ashx?c=Messages.Compose&action=AddRecipient'
             self.VmpSend = requests.post( self.TempUrl,                    
@@ -179,12 +206,12 @@ class VMP(object):
             
             if (self.VmpSend.status_code == 200):
                 print " Successfully Added the recipient: "+str(self.SenderLogin)
-                LoadRun.Log.info( " Successfully Add Recipient by the user: "+str(self.SenderLogin))  
+                print " Successfully Add Recipient by the user: "+str(self.SenderLogin) 
                 print self.VmpSend.text
                 
             else:
                 print "failed to added the recipient: %s" %self.VmpSend.status_code
-                LoadRun.Log.info( " Failed to add the recipient :"+str(self.SenderLogin)) 
+                print " Failed to add the recipient :"+str(self.SenderLogin)
                 
             
             self.TempUrl = VMPGlobalEnv.VmpEndpoint+'/Api.ashx?c=Messages.Compose&action=StartConversation'
@@ -204,14 +231,15 @@ class VMP(object):
             print self.VmpSend.status_code 
             if (self.VmpSend.status_code == 200):
                 print " Successfully start the conversion: "+str(self.SenderLogin)
-                LoadRun.Log.info( " Successfully start the conversion: "+str(self.SenderLogin))  
+                print " Successfully start the conversion: "+str(self.SenderLogin) 
                 print self.VmpSend.text
                 self.ConvId = str(str(str(self.VmpSend.text).split(",\"creatorID\"")[0]).split("\"id\":")[1]).strip("")
                 print self.ConvId
+                self.LogAgent.Log.info("StartTheNewConversion_Webconsole_Username : "+str(self.SenderLogin)+" ConversionID:"+str(self.ConvId))
                 return True
             else:
                 print "failed to start the conversion : %s" %self.VmpSend.status_code
-                LoadRun.Log.info( " Successfully Added the recipient :"+str(self.SenderLogin)) 
+                print " Successfully Added the recipient :"+str(self.SenderLogin)
                 return False
             return 0
             
@@ -242,11 +270,12 @@ class VMP(object):
             print self.VmpSend.status_code 
             if (self.VmpSend.status_code == 200):
                 print " Successfully Send the message by the user: "+str(self.SenderLogin)
-                LoadRun.Log.info( " Successfully Send the message by the user: "+str(self.SenderLogin))                     
+                print " Successfully Send the message by the user: "+str(self.SenderLogin)
+                self.LogAgent.Log.info("SendMessage_Successfully_Webconsole_Username : "+str(self.SenderLogin)+" ConversionID:"+str(self.ConvId))
                 return True
             else:
                 print "failed to Send the message Status: %s" %self.VmpSend.status_code
-                LoadRun.Log.info( " failed to Send the message Status for the user :"+str(self.SenderLogin)) 
+                print " failed to Send the message Status for the user :"+str(self.SenderLogin)
                 return False
         except:
             print sys.exc_info()
@@ -274,12 +303,13 @@ class VMP(object):
                         verify=False) 
             print self.VmpSend.status_code 
             if (self.VmpSend.status_code == 200):
-                print " Successfully Send the message by the user: "+str(self.SenderLogin)
-                LoadRun.Log.info( " Successfully Send the message by the user: "+str(self.SenderLogin))                     
+                print " Successfully Send MCR Message  by the user: "+str(self.SenderLogin)
+                #print " Successfully Send the message by the user: "+str(self.SenderLogin)  
+                self.LogAgent.Log.info("SendMCRMessage_Successfully_Webconsole_Username : "+str(self.SenderLogin)+" ConversionID:"+str(self.ConvId))
                 return True
             else:
-                print "failed to Send the message Status: %s" %self.VmpSend.status_code
-                LoadRun.Log.info( " failed to Send the message Status for the user :"+str(self.SenderLogin)) 
+                print "failed to Send the MCR message Status: %s" %self.VmpSend.status_code
+                #print " failed to Send the message Status for the user :"+str(self.SenderLogin) 
                 return False
         except:
             print sys.exc_info()
@@ -296,7 +326,8 @@ class VMP(object):
                     verify=False) 
         
         if (self.VmpSend.status_code == 200):
-            LoadRun.Log.info( "Successfully Logout by the user" +str(self.SenderLogin))                      
+            print "Successfully Logout by the user" +str(self.SenderLogin)   
+            self.LogAgent.Log.info("Logout_Successfully_Webconsole_Username : "+str(self.SenderLogin))
             return True
         else:
             print "failed to Logout: %s" %self.VmpSend.status_code
@@ -304,54 +335,45 @@ class VMP(object):
         
 
         
-# Example of use
+## Example of use
 
-VMPAgent = VMP()
+#VMPAgent = VMP()
 
-# define User name and password
-VMPAgent.SenderLogin = 'TestH035324'
-VMPAgent.SenderPassword = 'vocera'
-
-
-# authenticate the web console 
-VMPAgent.WebLogin()
-
-# Maintained and continue the session ID
-VMPAgent.MaintainSessionID()
-VMPAgent.ContinueSessionID()
-
-# Initialize the value 
-
-VMPAgent.RecipientID = 'U222'
-VMPAgent.MessageText = 'I need 11111'
-VMPAgent.ThreadMessageSubject = 'saas11111'
-
-#Create a new message conversion 
-VMPAgent.CreateNewConversation()
-
-# Initialize the value to send message to DL 
-
-#VMPAgent.DistributionListID = 'D6'
-#VMPAgent.MessageText = 'testing DL'
-#VMPAgent.ThreadMessageSubject = 'test DL'
-
-## Create a new message conversion 
-#VMPAgent.CreateNewConversationForDL()
+## define User name and password
+#VMPAgent.SenderLogin = '1111'
+#VMPAgent.SenderPassword = 'vocera'
 
 
-# Get the conversion ID to send message
-VMPAgent.MessageText = "test me09097097"
+## authenticate the web console 
+#VMPAgent.WebLogin()
 
-# Send message 
-time.sleep(5)
-VMPAgent.SendMessageMCRMessage()
-time.sleep(5)
+## Maintained and continue the session ID
+#VMPAgent.MaintainSessionID()
+#VMPAgent.ContinueSessionID()
 
-#print VMPAgent.SessionID
+## Initialize the value 
+
+#VMPAgent.RecipientID = 'U99'
+#VMPAgent.MessageText = 'I need 11111'
+#VMPAgent.ThreadMessageSubject = 'saas11111'
+
+##Create a new message conversion 
+#VMPAgent.CreateNewConversation()
+
+
+## Get the conversion ID to send message
+#VMPAgent.MessageText = "test me09097097"
+
 ## Send message 
-#time.sleep(5)
-#VMPAgent.SendMessage()
-#time.sleep(5)
+##time.sleep(5)
+##VMPAgent.SendMessageMCRMessage()
+##time.sleep(5)
 
-## Do logout from the user 
+##print VMPAgent.SessionID
+### Send message 
+#time.sleep(10)
+#VMPAgent.SendMessage()
+#time.sleep(10)
+
+### Do logout from the user 
 #VMPAgent.Logout()

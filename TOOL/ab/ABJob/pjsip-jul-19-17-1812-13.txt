@@ -1,0 +1,27 @@
+ 18:12:13.473          pjlib  select() I/O Queue created (00000000002BC5C0)
+ 18:12:13.473 sip_endpoint.c  Module "mod-msg-print" registered
+ 18:12:13.473 udp00000000002  SIP UDP transport started, published address is 172.30.26.141:5060
+ 18:12:13.473 sip_endpoint.c  Module "mod-tsx-layer" registered
+ 18:12:13.473 sip_endpoint.c  Module "mod-stateful-util" registered
+ 18:12:13.473 sip_endpoint.c  Module "mod-ua" registered
+ 18:12:13.473 sip_endpoint.c  Module "mod-invite" registered
+ 18:12:13.473 sip_endpoint.c  Module "mod-100rel" registered
+ 18:12:13.473 sip_endpoint.c  Module "mod-simpleua" registered
+ 18:12:13.490     wmme_dev.c  WMME found 5 devices:
+ 18:12:13.490     wmme_dev.c   dev_id 0: Wave mapper  (in=2, out=2)
+ 18:12:13.490     wmme_dev.c   dev_id 1: Microphone (Logitech USB Headse  (in=2, out=0)
+ 18:12:13.490     wmme_dev.c   dev_id 2: Microphone (Realtek High Defini  (in=2, out=0)
+ 18:12:13.490     wmme_dev.c   dev_id 3: Speakers (Logitech USB Headset   (in=0, out=2)
+ 18:12:13.490     wmme_dev.c   dev_id 4: Speaker/HP (Realtek High Defini  (in=0, out=2)
+ 18:12:13.490     wmme_dev.c  WMME initialized
+ 18:12:13.491          pjlib  select() I/O Queue created (00000000002E6B48)
+ 18:12:13.491     simpleua.c  Successfully created REGISTER message
+ 18:15:57.036     simpleua.c  Call state changed to INCOMING
+ 18:15:57.036     simpleua.c  Call state changed to EARLY
+ 18:15:57.036 strm0000000000  VAD temporarily disabled
+ 18:15:57.036 strm0000000000  Encoder stream started
+ 18:15:57.036 strm0000000000  Decoder stream started
+ 18:15:57.036     simpleua.c  Call state changed to CONNECTING
+ 18:15:57.037     simpleua.c  Call state changed to CONFIRMED
+ 18:16:01.846     simpleua.c  Call DISCONNECTED [reason=200 (OK)]
+ 18:16:01.846     simpleua.c  One call completed...

@@ -1,9 +1,7 @@
 """   This module would call the jmater script and pass the parameter based on the requirement """
 
 # Import session 
-import os
-import datetime
-import uuid
+from GlobalVariable_Utility import *
 
 class CallJmeterScript(object):
     """ This contains all the method related to Jmeter script execution"""
@@ -25,7 +23,7 @@ class CallJmeterScript(object):
     #----------------------------------------------------------------------
     def __init__(self,ScriptName):
         """Constructor"""
-        self.HomeDir =  str(os.path.dirname(os.path.realpath(__file__))).split("Autoclient")[0]+"Autoclient\\"
+        self.HomeDir =  str(os.path.dirname(os.path.realpath(__file__))).split(MAIN_DIR)[0]+MAIN_DIR+"\\"
         self.ToolDir = self.HomeDir+"TOOL\\"
         self.JmeterDir = self.ToolDir+"jmeter\\apache\\bin\\"
         self.JmaterPath = self.JmeterDir+"jmeter "

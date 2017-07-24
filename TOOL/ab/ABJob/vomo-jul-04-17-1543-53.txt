@@ -1,0 +1,74 @@
+15:43:53.090 Writing status.  serverip =  servernames =  isConnected = 
+15:43:53.094 update icons.  iMask = 0 bDND = 0 bHold = 0 cVoiceMessages= 0 cTextMessages = 0 cReadTextMessages= 0
+15:43:53.095 Entering displayName. Searching for Gateway Blink=0
+15:43:53.095 Leaving displayName
+15:43:53.139 In notifyConnected
+15:43:53.139 Set VCG IPAddr to 172.30.26.67 (431a1eac)
+15:43:53.139 In SignalMan::init()
+15:43:53.140 getAPMACAddr: f07f06f3244f
+15:43:53.140 TX [1] Ping
+15:43:53.140 In UDPStream::write. nBuffer=66 ipTo=431a1eac htonl(ipTo)=ac1e1a43 sendPort=5888 htons(iSendPort)=23
+15:43:53.140 Starting ping timer for interval: 8000
+15:43:53.140 Entering displayName. Searching for Server Blink=0
+15:43:53.140 Leaving displayName
+15:43:53.142 RX [1] Ack
+15:43:53.142 getAPMACAddr: f07f06f3244f
+15:43:53.142 Writing inventory record: 0:2:f07f06f3244f::00003000
+15:43:53.142 In LogMan::write with lt=2 and sLogLine=0:2:f07f06f3244f::00003000
+15:43:53.142 update icons.  iMask = 0 bDND = 0 bHold = 0 cVoiceMessages= 0 cTextMessages = 0 cReadTextMessages= 0
+15:43:53.142 Entering displayName. Logged Out Blink=0
+15:43:53.142 Leaving displayName
+15:43:53.142 Writing status.  serverip =  servernames =  isConnected = true
+15:43:53.173 RX [1] Options
+15:43:53.173 TX [1] Ack
+15:43:53.173 In UDPStream::write. nBuffer=20 ipTo=431a1eac htonl(ipTo)=ac1e1a43 sendPort=5888 htons(iSendPort)=23
+15:43:53.173 In handleOptions.  Setting options to 45845747
+15:43:53.174 RX [2] Responses
+15:43:53.174 TX [2] Ack
+15:43:53.174 In UDPStream::write. nBuffer=20 ipTo=431a1eac htonl(ipTo)=ac1e1a43 sendPort=5888 htons(iSendPort)=23
+15:43:53.174 Writing status.  serverip = 172.30.26.66 servernames =  isConnected = true
+15:43:53.186 RX [3] Name
+15:43:53.186 TX [3] Ack
+15:43:53.186 In UDPStream::write. nBuffer=20 ipTo=431a1eac htonl(ipTo)=ac1e1a43 sendPort=5888 htons(iSendPort)=23
+15:43:53.186 Entering displayName. test one Blink=0
+15:43:53.186 Leaving displayName
+15:43:53.187 RX [4] APName
+15:43:53.187 TX [4] Ack
+15:43:53.187 In UDPStream::write. nBuffer=20 ipTo=431a1eac htonl(ipTo)=ac1e1a43 sendPort=5888 htons(iSendPort)=23
+15:43:53.188 RX [5] VMessages
+15:43:53.188 TX [5] Ack
+15:43:53.188 In UDPStream::write. nBuffer=20 ipTo=431a1eac htonl(ipTo)=ac1e1a43 sendPort=5888 htons(iSendPort)=23
+15:43:53.189 update icons.  iMask = 0 bDND = 0 bHold = 0 cVoiceMessages= 0 cTextMessages = 0 cReadTextMessages= 0
+15:44:01.140 getAPMACAddr: f07f06f3244f
+15:44:01.140 TX [2] Ping
+15:44:01.140 In UDPStream::write. nBuffer=80 ipTo=431a1eac htonl(ipTo)=ac1e1a43 sendPort=5888 htons(iSendPort)=23
+15:44:01.140 Starting ping timer for interval: 30000
+15:44:01.142 RX [2] Ack
+15:44:01.142 TX [3] Log
+15:44:01.142 In UDPStream::write. nBuffer=50 ipTo=431a1eac htonl(ipTo)=ac1e1a43 sendPort=5888 htons(iSendPort)=23
+15:44:01.143 RX [3] Ack
+15:44:03.430 RX [6] Name
+15:44:03.430 TX [6] Ack
+15:44:03.430 In UDPStream::write. nBuffer=20 ipTo=431a1eac htonl(ipTo)=ac1e1a43 sendPort=5888 htons(iSendPort)=23
+15:44:03.430 Entering displayName. test one Blink=0
+15:44:03.431 Leaving displayName
+15:44:31.139 getAPMACAddr: f07f06f3244f
+15:44:31.139 TX [4] Ping
+15:44:31.139 In UDPStream::write. nBuffer=80 ipTo=431a1eac htonl(ipTo)=ac1e1a43 sendPort=5888 htons(iSendPort)=23
+15:44:31.139 Starting ping timer for interval: 30000
+15:44:31.141 RX [4] Ack
+15:45:01.139 getAPMACAddr: f07f06f3244f
+15:45:01.139 TX [5] Ping
+15:45:01.139 In UDPStream::write. nBuffer=80 ipTo=431a1eac htonl(ipTo)=ac1e1a43 sendPort=5888 htons(iSendPort)=23
+15:45:01.139 Starting ping timer for interval: 30000
+15:45:01.140 RX [5] Ack
+15:45:31.138 getAPMACAddr: f07f06f3244f
+15:45:31.138 TX [6] Ping
+15:45:31.138 In UDPStream::write. nBuffer=80 ipTo=431a1eac htonl(ipTo)=ac1e1a43 sendPort=5888 htons(iSendPort)=23
+15:45:31.138 Starting ping timer for interval: 30000
+15:45:31.140 RX [6] Ack
+15:46:01.137 getAPMACAddr: f07f06f3244f
+15:46:01.137 TX [7] Ping
+15:46:01.137 In UDPStream::write. nBuffer=80 ipTo=431a1eac htonl(ipTo)=ac1e1a43 sendPort=5888 htons(iSendPort)=23
+15:46:01.137 Starting ping timer for interval: 30000
+15:46:01.139 RX [7] Ack

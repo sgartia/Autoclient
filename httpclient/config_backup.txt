@@ -1,0 +1,19 @@
+# Http URL's to execute
+# If Comet config is not present, http urls will run independently
+# Please update userid & userpassword
+# Artificial limit of 8 http urls is set in code.
+
+
+
+#Interval between http urls
+URL.httpExecuteInterval=2000
+
+
+# Comet service URL to execute.
+# if comet service url and http urls are present, the http URL's will use the same sessionid as the Comet service
+
+COMETURL.0.urlPath=http://172.30.29.100/console/CometService?appVersion=3.0&clientType=unifiedClient&compress=false
+COMETURL.0.compressResponse	=	true
+
+#COMETURL.0.urlPath=http://10.37.43.111:8080/console/CometService?appVersion=1.1
+#COMETURL.0.compressResponse	=	true

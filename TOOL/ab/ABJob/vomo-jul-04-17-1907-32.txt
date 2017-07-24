@@ -1,0 +1,36 @@
+19:07:32.885 Writing status.  serverip =  servernames =  isConnected = 
+19:07:32.891 update icons.  iMask = 0 bDND = 0 bHold = 0 cVoiceMessages= 0 cTextMessages = 0 cReadTextMessages= 0
+19:07:32.891 Entering displayName. Searching for Gateway Blink=0
+19:07:32.891 Leaving displayName
+19:07:32.945 In notifyConnected
+19:07:32.945 Set VCG IPAddr to 172.30.26.67 (431a1eac)
+19:07:32.945 In SignalMan::init()
+19:07:32.946 getAPMACAddr: f07f06f3244f
+19:07:32.946 TX [1] Ping
+19:07:32.946 In UDPStream::write. nBuffer=66 ipTo=431a1eac htonl(ipTo)=ac1e1a43 sendPort=5888 htons(iSendPort)=23
+19:07:32.946 Starting ping timer for interval: 8000
+19:07:32.946 Entering displayName. Searching for Server Blink=0
+19:07:32.946 Leaving displayName
+19:07:32.947 RX [1] Ack
+19:07:32.948 getAPMACAddr: f07f06f3244f
+19:07:32.948 Writing inventory record: 0:2:f07f06f3244f::00003000
+19:07:32.948 In LogMan::write with lt=2 and sLogLine=0:2:f07f06f3244f::00003000
+19:07:32.948 update icons.  iMask = 0 bDND = 0 bHold = 0 cVoiceMessages= 0 cTextMessages = 0 cReadTextMessages= 0
+19:07:32.948 Entering displayName. Logged Out Blink=0
+19:07:32.948 Leaving displayName
+19:07:32.948 Writing status.  serverip =  servernames =  isConnected = true
+19:07:32.952 RX [1] Options
+19:07:32.952 TX [1] Ack
+19:07:32.952 In UDPStream::write. nBuffer=20 ipTo=431a1eac htonl(ipTo)=ac1e1a43 sendPort=5888 htons(iSendPort)=23
+19:07:32.952 In handleOptions.  Setting options to 45845755
+19:07:32.954 RX [2] Responses
+19:07:32.954 TX [2] Ack
+19:07:32.954 In UDPStream::write. nBuffer=20 ipTo=431a1eac htonl(ipTo)=ac1e1a43 sendPort=5888 htons(iSendPort)=23
+19:07:32.954 Writing status.  serverip = 172.30.26.66 servernames =  isConnected = true
+19:07:32.957 RX [3] APName
+19:07:32.957 TX [3] Ack
+19:07:32.958 In UDPStream::write. nBuffer=20 ipTo=431a1eac htonl(ipTo)=ac1e1a43 sendPort=5888 htons(iSendPort)=23
+19:07:32.958 RX [4] VMessages
+19:07:32.958 TX [4] Ack
+19:07:32.958 In UDPStream::write. nBuffer=20 ipTo=431a1eac htonl(ipTo)=ac1e1a43 sendPort=5888 htons(iSendPort)=23
+19:07:32.959 update icons.  iMask = 0 bDND = 0 bHold = 0 cVoiceMessages= 0 cTextMessages = 0 cReadTextMessages= 0

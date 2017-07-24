@@ -1,0 +1,6 @@
+UNTIL prompt dummy_foo1   wait 5
+CALL  WAIT  5
+PLAY  Call+c+c   WAIT  10  reply  yes
+UNTIL  Prompt dummy_foo1   wait   20
+CALL  WAIT  5
+UNTIL  Prompt dummy_foo1   wait   5
